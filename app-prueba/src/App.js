@@ -1,10 +1,10 @@
-import './App.css';
+import IndexMobile from './components/IndexMobile/IndexMobile';
 
 function App() {
   return (
-    <div className="App">
-      Hola
-    </div>
+    <>
+      <IndexMobile />
+    </>
   );
 }
 
