@@ -1,0 +1,57 @@
+.item{
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 8px 0px;
+}
+.item:before{
+    content: '';
+    display: block;
+    padding-bottom: 120%;
+}
+.itemImg{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.itemPrice{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    font-size: 10px;
+    background-color: rgba(0,0,0,0.8);
+    width: 30%;   
+    border-radius: 4px;
+    padding: 3px;
+    text-align: right;
+}
+.itemName{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(70, 105, 154,0.9);
+    font-size: 10px;
+}
+.item i{
+    position: absolute;
+    z-index: 1;
+    bottom: 2px;
+    left: 2px;
+    font-size: 9px;
+    background-color: rgba(13, 183, 166, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+}

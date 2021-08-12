@@ -1,4 +1,5 @@
 import ProductCartMobile from '../ProductCartMobile/ProductCartMobile';
+import HomeMobile from '../HomeMobile/HomeMobile';
 import './IndexMobile.css';
 
 const IndexMobile = () => {  
@@ -17,7 +18,8 @@ const IndexMobile = () => {
             </div>
 
             <div className="main">
-                <ProductCartMobile />                
+                {/*<ProductCartMobile />*/}
+                <HomeMobile />
             </div>
             
             <div className="footer">
