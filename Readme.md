@@ -19,3 +19,6 @@ _Para la creacion de wireframes se tomó inspiracion de:_
 * https://www.walmart.com.mx/
 
 * https://www.liverpool.com.mx/
+
+*Enlace al trablero de trabajo*
+* [Sprint 2](https://github.com/JoseSabas/grupo_12_GamingHouse/tree/master/GamingHouseApp) - HTML
