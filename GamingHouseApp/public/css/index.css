@@ -8,6 +8,8 @@
     justify-content: center; /*Centrado horizonal*/
     align-items: center; /*Centrado vertical*/
     background-color: #DE4343;
+    z-index: 2;
+    flex-wrap: wrap;
 }
 .fa-dice-d20{
     display: block;
@@ -45,6 +47,24 @@
     border: none;
     font-size: 10px;
 }
+
+/*=====================================================================================VerticalNavigation.css*/
+.verticalNavigation{
+    display: flex;
+    width: 100%;
+    background-color: #0C7A78;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 1%;
+}
+.verticalNavigation a{
+    color: white;
+    display: block;
+}
+.verticalNavigation a:hover{
+    color: #9AD5D4;
+}
+
 /*-------------------------------------------------------------------------------------*/
 .main{
     box-sizing: border-box; /*Con esto, ni el ancho ni el alto del div varían al agregar relleno y/o borde*/
@@ -60,7 +80,8 @@
     padding: 5px;
     bottom: 0;
 
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
 }
 .indexMobileNav{
     display: flex;
@@ -132,9 +153,8 @@ a:hover{
     bottom: 0;
     right: 0;
 
-    font-size: 10px;
-    background-color: rgba(0,0,0,0.8);
-    width: 30%;   
+    font-size: 3vw;
+    background-color: rgba(0,0,0,0.8);  
     border-radius: 4px;
     padding: 3px;
     text-align: right;
@@ -150,15 +170,39 @@ a:hover{
     text-align: center;
     padding: 3px;
     background-color: rgba(70, 105, 154,0.9);
-    font-size: 10px;
+    font-size: 3vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 .item i{
     position: absolute;
     z-index: 1;
-    bottom: 2px;
-    left: 2px;
-    font-size: 9px;
+    bottom: 1vw;
+    left: 1vw;
+    font-size: 3vw;
     background-color: rgba(13, 183, 166, 0.7);
-    padding: 5px;
+    padding: 2vw;
     border-radius: 50%;
+}
+
+/*===================MEDIA QUERIES*/
+@media (min-width: 360px) {/*Navegación mobile*/
+    .verticalNavigation{
+        display: none; /*display: block;*/
+    }
+    .footer{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {/*Navegación en desktop*/
+    .footer{
+        display: none;
+    }
+    .verticalNavigation{
+        display: flex;
+    }
 }

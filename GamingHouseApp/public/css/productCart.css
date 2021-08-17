@@ -8,6 +8,8 @@
     justify-content: center; /*Centrado horizonal*/
     align-items: center; /*Centrado vertical*/
     background-color: #DE4343;
+    z-index: 2;
+    flex-wrap: wrap;
 }
 .fa-dice-d20{
     display: block;
@@ -45,6 +47,24 @@
     border: none;
     font-size: 10px;
 }
+
+/*=====================================================================================VerticalNavigation.css*/
+.verticalNavigation{
+    display: flex;
+    width: 100%;
+    background-color: #0C7A78;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 1%;
+}
+.verticalNavigation a{
+    color: white;
+    display: block;
+}
+.verticalNavigation a:hover{
+    color: #9AD5D4;
+}
+
 /*-------------------------------------------------------------------------------------*/
 .main{
     box-sizing: border-box; /*Con esto, ni el ancho ni el alto del div varían al agregar relleno y/o borde*/
@@ -60,7 +80,8 @@
     padding: 5px;
     bottom: 0;
 
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
 }
 .indexMobileNav{
     display: flex;
@@ -94,13 +115,13 @@ a:hover{
     align-items: center;
 }
 .productCartSummaryItemMobile{
-    font-size: 10px;
+    font-size: 3vw;
     text-align: center;
     width: 33%;
 }
 .productCartSummaryItemMobile i{
     display: block;
-    font-size: 14px;
+    font-size: 4vw;
     margin-bottom: 2px;
 }
 .productCartSummaryItemMobile p{
@@ -113,7 +134,7 @@ a:hover{
     border: none;
     border-radius: 5px;
     padding: 6px;
-    font-size: 11px;
+    font-size: 3.5vw;
     color: white;
 }
 .productCartSummaryButtonMobile:hover{
@@ -129,7 +150,8 @@ a:hover{
     border-radius: 5px;
     margin: 10px 0px;
     padding: 5px;
-    font-size: 12px;
+    font-size: 4vw;
+    overflow: hidden;
   }
   
 .productCartItemTop{
@@ -155,7 +177,7 @@ a:hover{
 }
 .productCartItemTop i{
     display: block;
-    font-size: 18px;
+    font-size: 5vw;
     color: #A57041;
 }
 .productCartItemTop i:hover{
@@ -171,20 +193,27 @@ a:hover{
 .productCartItemBottomLeft{
     padding: 8px;
 }
-.productCartItemBottomLeft img{
+.artImg{
     width: 80px;
-    padding: 4px;
-    border-radius: 5px;
+    height: 80px;
+    /*border-radius: 5px;*/
     border: 1px solid rgb(226, 211, 211);
+
+    /*Esto hace la magia de la imágen*/
+    background-size: auto 100%;/*Ancho lo que quepa; alto 100%*/
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .controls{
     display: flex;
     align-items: center;
     padding: 0px 10px;
+    margin-top: 2vw;
 }
 .controls i{
     display: block;
     color: #447FE1;
+    font-size: 4vw;
 }
 .controls i:hover{
     cursor: pointer;
@@ -194,6 +223,7 @@ a:hover{
     display: block;
     flex-grow: 1;
     text-align: center;
+    font-size: 4vw;
 }
 .productCartItemBottomRight{
     flex-grow: 1;
@@ -221,7 +251,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 11px;
+    font-size: 3vw;
 }
 .productCartItemBottomRightMiddleItem{
     width: 30%;
@@ -237,8 +267,29 @@ a:hover{
     height: 10px;
 }
 .productCartItemBottomRightBottom{
+    margin-top: 4%;
     text-align: center;
+    font-size: 3vw;
 }
 .productCartItemBottomRightBottom h2{
     margin: 0px;
+}
+
+/*===================MEDIA QUERIES*/
+@media (min-width: 360px) {/*Navegación mobile*/
+    .verticalNavigation{
+        display: none; /*display: block;*/
+    }
+    .footer{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {/*Navegación en desktop*/
+    .footer{
+        display: none;
+    }
+    .verticalNavigation{
+        display: flex;
+    }
 }
