@@ -20,12 +20,8 @@ _Para la creacion de wireframes se tomó inspiracion de:_
 
 * https://www.liverpool.com.mx/
 
-<<<<<<< HEAD
-hola
+
 =======
 *Enlace al trablero de trabajo*
 * [Sprint 2](https://github.com/JoseSabas/grupo_12_GamingHouse/tree/master/GamingHouseApp) - HTML
 
-
-*Hola_____*
->>>>>>> 87e43d0932848d9c8edb967a95dc1095daba440d
