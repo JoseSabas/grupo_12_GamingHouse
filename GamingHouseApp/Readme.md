@@ -28,3 +28,10 @@ public>css
 sprint>
 ○ APP rutas express(app.js)
 ```
+
+_Ligas_
+
+```
+Trello>
+○ https://trello.com/b/OBZDEhCp/gaming-house
+```
