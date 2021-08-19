@@ -22,6 +22,7 @@ _Para la creacion de wireframes se tomó inspiracion de:_
 
 
 =======
+# Sprint 2 : GamingHouse HTML
 *Enlace al trablero de trabajo*
 * [Sprint 2](https://github.com/JoseSabas/grupo_12_GamingHouse/tree/master/GamingHouseApp) - HTML
 
