@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://www.fontzip.com/storage/2017/12/27/ubisoft-sans/webfonts/ubisoftsans-bold.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/register.css">
     </head>
     <body>
         <header>
@@ -14,17 +14,39 @@
             </div>
         </header>
 
-        <img src="/images/login.jpeg" class="imagenlogin" alt="">
-
         <main>    
 
-            <h2>¡Conectate!</h2>
+            <h2>¡Registrate!</h2>
             <h3>Ingresa tus datos:</h3>
 
             <form action="/" method="POST">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="password" name="pass" placeholder="Contraseña del usuario">
+                <div class="informacion">
+                    <input type="text" name="name" placeholder="Nombre y apellido">
+                    <input type="text" name="user" placeholder="Nombre de usuario">
+                    <input type="email" name="email" placeholder="E-mail">
+            
+                    <label class="nacimiento" for="birth_date"><h3>Fecha de nacimiento</h3></label>
+                    
+                    <input type="date" name="birth_date" id="birth_date">
+                    
+                    <input type="text" name="addres" placeholder="Domicilio">
+                </div>
+
+                <h3>Elegí tu foto de usuario</h3>
+
+                <div class="info_usuario">
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <br>
+                <br>
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                <br>
+                <br>
+                </div>
             </form>
 
             <div class="tipo-ingreso">
@@ -42,10 +64,12 @@
             </div>
             
             <div class="opciones">
-            <a href="/register">No tengo cuenta</a>
+            <a href="/login">Ya tengo cuenta</a>
             <a href="/">regresar</a>
             </div>
         </main>
+
+        <img src="/images/teclado.jpeg" class="imagenRegistro" alt="">
 
         <div class="footer">
 

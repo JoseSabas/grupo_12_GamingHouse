@@ -16,7 +16,7 @@ header {
 
 body{
     background-color: #f2f2f2;
-    background-image: url(/images/login.jpeg);
+    background-image: url(/images/teclado.jpg);
     height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ main {
     margin: 15%;
     align-items: center;
     text-align: center;
-    height: 70%;
+    height: 90%;
     width: 70%;
     background-color: #f2f2f2;
     border: 2px solid #bb5b0c;
@@ -63,10 +63,14 @@ main {
 
     form input{
         align-items: center;
-        margin: 10px 20px;
+        margin: 10px 0px;
     }
 
-    main input[type='submit']{
+    main input[type='file']{
+        width: 70%;
+    }
+
+    main input[type='submit'], main input[type='file'], main input[type='reset']{
         color: #fff;
         background-color: #bb5b0c;
         border: 1px solid #000;
@@ -76,7 +80,7 @@ main {
         text-align: center;
       } 
     
-      main input[type='submit']:hover{
+      main input[type='submit']:hover, main input[type='file']:hover, main input[type='reset']:hover{
         background-color: #bb3e0c;
       }  
 
@@ -158,6 +162,16 @@ main {
     } 
 
     main input[type='password']{
+        width: 70%;
+        margin: 10px 10%;
+    } 
+
+    main input[type='email']{
+        width: 70%;
+        margin: 10px 10%;
+    } 
+
+    main input[type='date']{
         width: 70%;
         margin: 10px 10%;
     } 
