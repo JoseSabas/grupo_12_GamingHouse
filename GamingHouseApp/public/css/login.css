@@ -66,6 +66,10 @@ main {
         margin: 10px 20px;
     }
 
+    .recordar label{
+        font-size: 11px;
+    }
+
     main input[type='submit']{
         color: #fff;
         background-color: #bb5b0c;
@@ -79,6 +83,16 @@ main {
       main input[type='submit']:hover{
         background-color: #bb3e0c;
       }  
+
+      main a {
+        color: #bb5b0c;
+        font-size: 11px;
+        margin-left: 20px;
+      }
+
+      main a:hover{
+          color: #bb3e0c;
+      }
 
       .tipo-ingreso {
           width: 100%;
