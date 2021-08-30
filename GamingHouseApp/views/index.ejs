@@ -6,6 +6,7 @@
     </head>
     
     <body>
+<<<<<<< HEAD
         <% articles.forEach((article, index) => { %>
         <%    console.log(article); %>
         <% }); %>
@@ -30,6 +31,9 @@
                 <a href="#"><i class="fas fa-volume-up"></i></a>
             </nav>
         </div>
+=======
+        <%- include('partials/headerNavbar') %>
+>>>>>>> f83f9c6944edd9293b5e3b8a6f4c9f190395f0cd
 
         <div class="main">
             <!--<HomeMobile />-->
@@ -101,5 +105,7 @@
                 <a href="#" class="indexMobileNavA"><i class="fas fa-bars"></i></a>
             </nav>
         </div>  
+
+        <%- include('partials/footer') %>
     </body>
 </html>
