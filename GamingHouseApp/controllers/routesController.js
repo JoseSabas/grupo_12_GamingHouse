@@ -9,15 +9,6 @@ const controlador = {
         res.render('login');
     },
     productCart: (req, res) => {
-<<<<<<< HEAD
-        res.render('productCart');
-    },
-    productDetail: (req, res) => {
-        res.render('productDetails');
-    },
-    register: (req, res) => {
-        res.render('register');
-=======
         res.render("productCart");
     },
     productDetail: (req, res) => {
@@ -33,7 +24,7 @@ const controlador = {
 
     editProduct: (req, res) => {
         res.render("editProduct");
->>>>>>> f83f9c6944edd9293b5e3b8a6f4c9f190395f0cd
+
     }
 }
 
