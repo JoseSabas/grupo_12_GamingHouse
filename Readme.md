@@ -30,5 +30,5 @@ _Para la creacion de wireframes se tomó inspiracion de:_
 
 # Sprint 3 : GamingHouse EJS
 *Enlace al trablero de trabajo*
-* [Sprint 3](https://github.com/JoseSabas/grupo_12_GamingHouse/tree/master/GamingHouseApp) - HTML
+* [Sprint 3](https://github.com/JoseSabas/grupo_12_GamingHouse/tree/master/GamingHouseApp) - EJS
 * Controllers , Rutas , Add - Edit Producto
