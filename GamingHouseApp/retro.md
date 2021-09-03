@@ -26,4 +26,19 @@ QUE PODEMOS MEJORAR
 ○ Mejor comunicación
 ○ Realizar más reuniones
 
+# Sprint 3:
+```
+Contenido: .ejs / rutas /  vistas - Editar-Registrar producto
+```
 
+```
+Observaciones: 
+○ Mejor division de trabajo
+○ Resultados esperados
+○ Progreso en el contenido pre-hecho
+
+A mejorar:
+○ Organizacion de archivos
+○ Diseño
+
+```
